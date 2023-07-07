@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+        .selected {
+            background-color: rgb(224, 0, 0);
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Turnipstigram | Turnips</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="turnip-favicon.ico.ico">
+  </head>
+  <body style="background: linear-gradient(#470d92, #d6c20d); background-repeat: no-repeat";>
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <a href="index.html"; style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: white;"><h2>Home</h2></a>
+            <a href="turnipstigram.html"; style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: white;"><h2>Turnipstigram</h2></a>
+            <a href="what-is-a-turnip.html" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: white;"><h2>What Is A Turnip?</h2></a>
+            <a href="parts-of-a-turnip.html"; style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: white;"><h2>Parts Of A Turnip</h2></a>
+            <hr>
+        </div>
+        <div class="row mt-4">
+            <h1 style="color: white;">TURNIPSTIGRAM - THE NEW WAY TO SHARE TURPICS</h1>
+        </div>
+        <div class="row mt-4">
+            <p style="color: #ffffff; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><label for="avatar">Upload Your own Turpic:</label>
+                <input type="file"
+                       id="Turpic" name="Turpic"
+                       accept="image/png, image/jpeg">
+            </p>
+        </div>
+        <div class="row">
+            <p><img src="https://cdn.mr-fothergills.co.uk/product-images/op/z/21321z.jpg" alt="Cute Turnip" style="width: 240px;"></p>
+            <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: white;">--CUTEST TURPIC--          --MOST LIKED TURPIC--</p>
+            <p><button onclick="toggleSelected(event)">Like</button> <Button onclick="toggleSelected(event)">Dislike</Button></p>    
+        </div>
+        <div class="row">
+            <p><img src="https://tse1.mm.bing.net/th?id=OIP.GfyNyiZnUUJl29en9RbBzwHaE8&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+            <p><button onclick="toggleSelected(event)">Like</button> <Button onclick="toggleSelected(event)">Dislike</Button></p>        
+        </div>
+        <div class="row">
+            <p><img src="https://tse3.mm.bing.net/th?id=OIP.3CMLsAlp3Uoah981qxr3SwHaE9&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+            <p><button onclick="toggleSelected(event)">Like</button> <Button onclick="toggleSelected(event)">Dislike</Button></p>        
+        </div>
+        <div class="row">
+            <p><img src="https://tse4.mm.bing.net/th?id=OIP.9q-q9zLFR7Dr0oW1tdSkGAHaHa&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+            <p><button onclick="toggleSelected(event)">Like</button> <Button onclick="toggleSelected(event)">Dislike</Button></p>        
+        </div>
+        <div class="row">
+            <p><img src="https://tse4.mm.bing.net/th?id=OIP.i_85qOfxA46uTn9EGVcJOgHaE8&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+            <p><button onclick="toggleSelected(event)">Like</button> <button onclick="toggleSelected(event)">Dislike</Button></p>        
+        </div>
+        <div class="row">
+            <p><img src="https://tse1.mm.bing.net/th?id=OIP.Hr3dg_NjedmCWaE9979spAHaFj&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+            <p><button onclick="toggleSelected(event)">Like</button> <Button onclick="toggleSelected(event)">Dislike</Button></p>        
+        </div>
+        <div class="row">
+            <p><img src="https://tse3.mm.bing.net/th?id=OIP.gIxvXK_rEbSMtqQGZIZvqAHaFj&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+            <p><button onclick="toggleSelected(event)">Like</button> <Button onclick="toggleSelected(event)">Dislike</Button></p>
+        </div>
+        <div class="row">
+            <p><img src="https://tse3.mm.bing.net/th?id=OIP.8kBsw5sXnMiDw5bu00E9zwHaFj&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+            <p><button onclick="toggleSelected(event)">Like</button> <Button onclick="toggleSelected(event)">Dislike</Button></p>
+        </div>
+        <div class="row">
+            <p><img src="https://tse4.mm.bing.net/th?id=OIP.M_o8l7u3hZcuEe28OXJK1gHaE7&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+            <p><button onclick="toggleSelected(event)">Like</button> <Button onclick="toggleSelected(event)">Dislike</Button></p>
+        </div>
+        <div class="row">
+            <p><img src="https://tse3.mm.bing.net/th?id=OIP.EDoyBD0vqqxCyNhxjFa9twHaFS&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+            <p><button onclick="toggleSelected(event)">Like</button> <Button onclick="toggleSelected(event)">Dislike</Button></p>
+        </div>
+        <div class="row">
+            <p><img src="https://tse4.mm.bing.net/th?id=OIP.PgTkBOhCp0HV1hghIw_nFAHaFj&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+            <p><button onclick="toggleSelected(event)">Like</button> <Button onclick="toggleSelected(event)">Dislike</Button></p>
+        </div>
+        <div class="row">
+            <p><img src="https://tse3.mm.bing.net/th?id=OIP.nYj1_PUU8GMr4l9AN4wOygHaE7&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+            <p><button onclick="toggleSelected(event)">Like</button> <Button onclick="toggleSelected(event)">Dislike</Button></p>
+        </div>
+        <div class="row">
+            <p><img src="https://tse3.mm.bing.net/th?id=OIP.p5niXR4mZAtocxGoM7ILXAHaE8&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+            <p><button onclick="toggleSelected(event)">Like</button> <Button onclick="toggleSelected(event)">Dislike</Button></p>
+        </div>
+        <div class="row">
+            <p><img src="https://tse1.mm.bing.net/th?id=OIP.653CVrMqqyUIQWgtlhlgIgHaDT&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+            <p><button onclick="toggleSelected(event)">Like</button> <Button onclick="toggleSelected(event)">Dislike</Button></p>
+        </div>
+        <div class="row">
+            <p><img src="https://tse2.mm.bing.net/th?id=OIP.Z4Hye9qi0Idy0IMPUtaudwHaJ7&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+            <p><button onclick="toggleSelected(event)">Like</button> <Button onclick="toggleSelected(event)">Dislike</Button></p>
+        </div>
+        <div class="row">
+            <p><img src="https://tse3.mm.bing.net/th?id=OIP.U7gfbWHf7dBBl4gIcrSF9AHaGu&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+            <p><button onclick="toggleSelected(event)">Like</button> <Button onclick="toggleSelected(event)">Dislike</Button></p>
+        </div>
+        <div class="row">
+            <p><img src="https://tse4.mm.bing.net/th?id=OIP.uuesVGWmNe4p2lR9c8g_UwHaHB&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+            <p><button onclick="toggleSelected(event)">Like</button> <Button onclick="toggleSelected(event)">Dislike</Button></p>
+        </div>
+        <div class="row">
+            <p><img src="https://tse2.mm.bing.net/th?id=OIP.YELJjJ8quxw9wCI6JzfC6gHaFO&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+            <p><button onclick="toggleSelected(event)">Like</button> <Button onclick="toggleSelected(event)">Dislike</Button></p>
+        </div>
+        <div class="row">
+            <p><img src="https://tse3.mm.bing.net/th?id=OIP.gIxvXK_rEbSMtqQGZIZvqAHaFj&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+            <p><button onclick="toggleSelected(event)">Like</button> <Button onclick="toggleSelected(event)">Dislike</Button></p>
+        </div>
+        <div class="row">
+            <p><img src="https://tse2.mm.bing.net/th?id=OIP.ZwyGapR8CZfW5NehMKdlxwAAAA&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+            <p><button onclick="toggleSelected(event)">Like</button> <Button onclick="toggleSelected(event)">Dislike</Button></p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  </body>
+  <script>
+    function toggleSelected(e) {
+        e.target.classList.toggle("selected");
+    }
+  </script>
+</html>
+<!--
+<!DOCTYPE html
+
+<html>
+    <head>
+        <a href="index.html"; style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: white;"><h2>Home</h2></a>
+        <a href="turnipstigram.html"; style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: white;"><h2>Turnipstigram</h2></a>
+        <a href="what-is-a-turnip.html" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: white;"><h2>What Is A Turnip?</h2></a>
+        <a href="parts-of-a-turnip.html"; style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: white;"><h2>Parts Of A Turnip</h2></a>
+    <hr>
+    </head>
+    <body style="background: linear-gradient(#470d92, #d6c20d);">
+        <p style="color: #ffffff; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><label for="avatar">Upload Your own Turpic:</label>
+
+            <input type="file"
+                   id="Turpic" name="Turpic"
+                   accept="image/png, image/jpeg">
+            </p>
+        <p><img src="https://tse4.explicit.bing.net/th?id=OIP.ZIHxU21znANGWWNqRirw3gHaGe&pid=Api&P=0&h=180" alt="Cute Turnip"></p>
+        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: white;">--CUTEST TURPIC--          --MOST LIKED TURPIC--</p>
+        <p><button>Like</button> <Button>Dislike</Button></p>
+        <p><img src="https://tse1.mm.bing.net/th?id=OIP.GfyNyiZnUUJl29en9RbBzwHaE8&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+        <p><button>Like</button> <Button>Dislike</Button></p>        
+        <p><img src="https://tse3.mm.bing.net/th?id=OIP.3CMLsAlp3Uoah981qxr3SwHaE9&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+        <p><button>Like</button> <Button>Dislike</Button></p>        
+        <p><img src="https://tse4.explicit.bing.net/th?id=OIP.9q-q9zLFR7Dr0oW1tdSkGAHaHa&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+        <p><button>Like</button> <Button>Dislike</Button></p>        
+        <p><img src="https://tse4.mm.bing.net/th?id=OIP.i_85qOfxA46uTn9EGVcJOgHaE8&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+        <p><button>Like</button> <Button>Dislike</Button></p>        
+        <p><img src="https://tse1.mm.bing.net/th?id=OIP.Hr3dg_NjedmCWaE9979spAHaFj&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+        <p><button>Like</button> <Button>Dislike</Button></p>        
+        <p><img src="https://tse3.mm.bing.net/th?id=OIP.gIxvXK_rEbSMtqQGZIZvqAHaFj&pid=Api&P=0&h=180" alt="beautiful Turnip"></p>
+        <p><button>Like</button> <Button>Dislike</Button></p>
+    </body>
+</html>-->

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Turnips</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="turnip-favicon.ico.ico">
+  </head>
+  <body style="background: linear-gradient(#d325d3, #ffffff); background-repeat: no-repeat;">
+    <div class="container-fluid">
+      <div class="row mt-5">
+          <a href="index.html"; style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: white;"><h2>Home</h2></a>
+          <a href="turnipstigram.html"; style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: white;"><h2>Turnipstigram</h2></a>
+          <a href="what-is-a-turnip.html" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: white;"><h2>What Is A Turnip?</h2></a>
+          <a href="parts-of-a-turnip.html"; style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: white;"><h2>Parts Of A Turnip</h2></a>
+          <hr>
+      </div>
+      <div class="row">
+          <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Why we need more turnips</h1>
+          <img src="https://tse3.mm.bing.net/th?id=OIP.3CMLsAlp3Uoah981qxr3SwHaE9&pid=Api&P=0&h=180" alt="Photo of turnips" style="width: fit-content;">
+          <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><a href="https://medmunch.com/turnips-vs-beets/" style="color: black;">Learn More</a></p>
+      </div>
+      <div class="row">
+          <h4 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Turnips > Beets</h4>
+          <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Turnips Are Healthier! |</p>
+          <p style= "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Calories: Turnips: 32 Beets: 43 |
+          Carbs: Turnips: 7.13 Beets: 9.56 |
+          Sugars(g): Turnips: 0.81 beets: 6.76 |</p>
+      </div>
+      <div class="container-fluid">
+          <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">-Turnips Look Cool</p>
+          <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">-Turnips Are Cool</p>
+        <div class="d-flex gap-3">
+          <button class="mr-3" style="background: #d325d3;" onclick="increment()">PRESS TO ADD TURNIP TO GLOBAL TURNIP SUPPLY</button>
+          <h2 id="counter" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #d325d3;" onclick="decrement()">Global Turnip Supply: 6560943</h2>
+        </div>
+      </div>
+      <p></p><button style="background: #d325d3; height: 42.61px; margin-left: 11px;" target="_blank" onclick="CrashAndBurn()">PRESS TO REMOVE TURNIP FROM GLOBAL TURNIP SUPPLY(please don't)</button>
+    </div>
+    <!--<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">YOU LITTLE...</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              WHY??? WHY DO YOU HATE TURNIPS???
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">I'm Sorry.</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">I Won't Do It Again.</button>
+            </div>
+          </div>
+        </div>
+      </div>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  </body>
+  <script type="text/javascript"> 
+    function CrashAndBurn() { 
+      alert("You Meanie!")
+      while (true) {
+        window.open("https://www.desmos.com/calculator/ueqg1el2kr",target = "_blank", windowFeature = "popup")
+      }
+    }
+
+    var counter = 6560943; 
+    var el = document.getElementById("counter");
+    console.log (el);
+    function increment() {
+      counter = counter + 1;
+      el.innerText= "Global Turnip Supply: " + counter;
+    }
+      function decrement() {
+      if (counter > 0) {
+        counter = counter - 1;
+        el.innerText= "Global Turnip Supply: " + counter;
+      }
+    }
+
+    allCookies = document.cookie;
+    cookieValue = document.cookie.split("; ").find((row) => row.startsWith("terms="))?.split("=")[1];
+    if (cookieValue != "read") {
+      window.open("terms-and-conditions.html",target = "_blank", windowFeature = "popup");
+      document.cookie = "terms=read; ";
+    }
+  </script>
+</html>
